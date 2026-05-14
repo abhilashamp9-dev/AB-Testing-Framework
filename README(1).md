@@ -40,7 +40,7 @@ These datasets contain marketing campaign metrics such as impressions, clicks, a
 - Conclusion: Replace this with the conclusion shown in your terminal output.
 
 ## 📊 Conversion Rate Comparison
-![Conversion Rates](conversion_rates.png)
+![Conversion Rates](convertion_rates.png)
 
 ## 💡 Business Insight
 The analysis helps determine whether the experimental campaign generated a meaningful improvement in conversions. Statistical significance testing ensures that decisions are based on evidence rather than random variation.
