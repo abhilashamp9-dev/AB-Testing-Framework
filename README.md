@@ -28,16 +28,16 @@ These datasets contain marketing campaign metrics such as impressions, clicks, a
 2. Clean and standardize column names
 3. Create a binary conversion variable based on purchases
 4. Calculate conversion rates for each group
-5. Perform Chi-Square statistical testing
+5. Perform "two-sample t-test
 6. Compute lift percentage
 7. Visualize the conversion rate comparison
 
 ##  Key Results
-- Control Conversion Rate: XX.XX%
-- Test Conversion Rate: XX.XX%
-- Lift: 0.00%
-- P-value: 1.o
-- Conclusion: Replace this with the conclusion shown in your terminal output.
+- Control Average Purchases:522.79
+- Test Average Purchases: 521.23
+- Lift: -0.30%
+- P-value: 0.976
+- Conclusion: No statistically significant difference (p > 0.05). The new campaign did not improve purchases, so we fail to reject the null hypothesis.
 
 ## Conversion Rate Comparison
 ![Conversion Rates](convertion_rates.png)
