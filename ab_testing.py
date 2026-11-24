@@ -58,10 +58,17 @@ lift = (
 print(f"Lift: {lift:.2f}%")
 
 # Create and save visualization
-performance.plot(kind="bar")
+plt.figure(figsize=(7, 5))
+bars = plt.bar(performance.index, performance.values, color=['#4A90D9', '#F5A623'])
 plt.ylabel("Average Purchases")
-plt.title("Control vs Test Average Purchases")
+plt.title("Control vs Test - Average Purchases")
+plt.ylim(0, 600)
+
+for bar in bars:
+    plt.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 10,
+             f'{bar.get_height():.2f}', ha='center', fontsize=11, fontweight='bold')
+
 plt.tight_layout()
-plt.savefig("conversion_rates.png")
+plt.savefig("avg_purchases_chart.png")
 plt.show()
 
